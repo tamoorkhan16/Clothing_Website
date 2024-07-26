@@ -1,68 +1,52 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import url("Custom\CustomCssFile.css");
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
+nav {
+  background-color: var(--blk);
+  color: var(--wht);
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  justify-content: space-around;
+  padding: 0.3%;
+  min-height: 40px;
 }
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
+.logo {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
   cursor: pointer;
-  transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.logo h3 {
+  font-family:  var(--heading_font);
+  /* border: 2px solid yellowgreen; */
+  display: inline;
+  letter-spacing: 2px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
+.navlinks {
+  /* border: 2px solid rebeccapurple; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 65%;
+}
+
+.navlinks ul {
+  display: flex;
+  /* border: 2px solid red; */
+}
+.navlinks ul li {
+  list-style: none;
+  padding: 0px 12px;
+  /* border: 1px solid yellow; */
+  margin: 0px 12px;
+}
+.navlinks ul li a {
+  color: var(--wht);
+}
+
+
+@media screen and (max-width: 768px) {
+  .navlinks ul li {
+    padding: 0px 6px;
+    margin: 0px 6px;
   }
 }
